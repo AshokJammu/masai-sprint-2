@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bill Generator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        
+        <header>
+            <h1> Bill Information</h1>
+          </header>
+        <!-- Idley Bill-->
+        <div>
+        <label>Idley</label>
+            Quantity
+            <input type="text" name = "num1" id="num1">
+            Price
+            <input type="text" name = "num2" id="num2">
+        </tr>
+        
+        <button onclick="idleyBill()">Add</button>
+        <p id ="exponentResult"> </p>
+        </hr>
+        </div>
+        <div>
+         <!-- Dosa Bill-->
+        <label>Dosa</label>
+        Quantity
+        <input type="text" name = "dosa" id="num3">
+        Price
+        <input type="text" name = "dosa" id="num4">
+        <button onclick="dosaBill()">Add</button>
+        <p id ="dosaBill"> </p>
+        </hr>
+        </div>
+
+        <div>
+         <!-- Puri Bill-->
+         <label>Puri</label>
+         Quantity
+         <input type="text" name = "puri" id="num5">
+         Price
+         <input type="text" name = "puri" id="num6">
+         <button onclick="puriBill()">Add</button>
+         <p id ="puriBill"> </p>
+         </hr>
+        </div>
+
+        <div>
+            <input type="text" name = "tax" id="tax">
+            <button onclick="tax()">GST</button>
+            
+        </div>
+
+        <div>
+            <select name="" id="selectDiscount">
+             <option id="none">NONE</option>
+             <option id="sunSpecial">SUNDAY SPECIAL</option>
+             <option id="famSpecial">FAMILY SPECIAL</option>
+             <option id="bdaySpecial">BIRTHDAY SPECIAL</option>
+             <option id="fridayFun">FRIDAY FUN</option>
+            </select>
+
+            <button onclick="discount()">Discount</button>
+            <p id ="discountBill"> </p>
+        </div>
+        
+        <!-- Total Bill-->
+        <div>
+            <button onclick="totalBill()">Total</button>
+            <button onclick="receiptBill()">Bill Reciept</button>
+            <p id ="totalBill">Total Bill is </p>
+            <p id="receiptBill"></p>
+        </div>
+
+        
+        
+    </body>
+</html>

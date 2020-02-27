@@ -1,0 +1,31 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color:orange;
+  }
+
+header {
+    background: purple;
+    height: 50px;
+    
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  div {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+  }
+label{
+    color: green;
+    font-size: 25px;
+}
