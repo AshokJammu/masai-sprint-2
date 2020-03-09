@@ -1,0 +1,26 @@
+h1 {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 100px;
+  text-decoration: underline green ;
+  color: blue;
+}
+table {
+  text-align: center;
+  margin: 20px;
+  font-size: 50px;
+  margin: auto;
+  border-collapse: collapse;
+  border-top: hidden;
+  border-bottom: hidden;
+  border-left: hidden;
+  border-right: hidden;
+}
+
+td {
+  text-align: center;
+  border: 2px solid red;
+  margin: auto;
+  padding: 60px;
+}
