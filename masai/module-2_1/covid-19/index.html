@@ -1,0 +1,245 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>COVID-19</title>
+    <style>
+      body {
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      }
+      #topHeader{
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+      }
+      .card-img {
+        height: 150px;
+        width: 250px;
+      }
+      #dashBoard1{
+        background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+        font-size: 25px;
+      }
+      #dashBoard2{
+        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+        font-size: 25px;
+      }
+      #dashBoard3{
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+        font-size: 25px;
+      }
+
+      .symptoms{
+        background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-3">
+          <img src="/home/ashok/coding/week_06/Day-6/masai/module-2_1/covid-19/Resources/coronavirus.jpg" class="rounded float-left card-img" alt="...">
+          <h4 class="border"></h4>
+        </div>
+        <div class="col-9 bg-danger" id="topHeader">
+          <h1 class="display6 text-danger font-weight-bold ">COVID-19</h1>
+         <br>
+          <p class="display6 text-white">#IndiaFightsCorona COVID-19</p>
+            
+          <h4 class="text-white">There is a lot of false information around. These are the facts.</h4>
+        </div>
+      </div>
+      <div class="row p-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+            <!-- <nav class="navbar navbar-light" "> -->
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Countries<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Live</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search">Search</button>
+              </form>
+            </div>
+          </nav>
+      </div>
+    </div>
+    
+    <!-- Dashboard -->
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-4">
+          <div class="card p-4" id="dashBoard1"></div>
+        </div>
+        <div class="col-4">
+          <div class="card p-4" id="dashBoard2"></div>
+        </div>
+        <div class="col-4">
+          <div class="card p-4" id="dashBoard3"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Covid Images -->
+    <div class="container">
+        <div class="row p-5 symptoms">
+            <div class="card col-6 symptoms" style="width: 18rem;">
+                <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/symptoms.png" class="card-img-top" alt="...">    
+            </div>
+
+            <div class="card col-6 symptoms" style="width: 18rem;">
+                <h3>How it spreads</h3>
+                <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/block-one.png" class="card-img-top" alt="..."><br>
+                <h3>PREVENTION</h3>
+                <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/block-two.png" class="card-img-top" alt="...">
+
+            </div>
+        </div>
+
+        <div class="row p-4">
+            <div class="col-12">
+                <!-- <div class="col-">
+                    <h6>Activities
+                        Be an active partner in nation-building. Participate in Groups, Tasks, Discussions, Polls, Blogs and Talks. Contribute Now!</h6>
+                </div> -->
+
+                <div class="card-group">
+                    <div class="card">
+                        
+                      <!-- <img src="" class="card-img-top" alt="..."> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <!-- <img src="..." class="card-img-top" alt="..."> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <!-- <img src="..." class="card-img-top" alt="..."> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+    
+    // Retrive Global data from api
+    // send global data to global_record function
+        global_record_data()
+        function global_record_data(){
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://api.covid19api.com/summary");
+        xhr.send();
+        xhr.onload = function () {
+          if ((xhr.status = 200)) {
+            //console.log(this.response)
+            var data = JSON.parse(this.response).Global;
+           // console.log(data);
+            global_record(data);
+          } else {
+            console.log("ERROR CODE IS" + " " + xhr.status);
+          }
+        };
+        }
+
+    
+    // Display global data in Main Page
+      function global_record(data) {
+        var dashBoard1 = document.getElementById("dashBoard1");
+        var dashBoard2 = document.getElementById("dashBoard2");
+        var dashBoard3 = document.getElementById("dashBoard3");
+        
+        dashBoard1.textContent = ""
+        dashBoard2.textContent = ""
+        dashBoard3.textContent = ""
+        var newConfirm = document.createElement("p");
+        newConfirm.textContent = "NewConfirmed:" + " " + data["NewConfirmed"];
+
+        var totalConfirm = document.createElement("p");
+        totalConfirm.textContent =
+          "TotalConfirmed:" + " " + data["TotalConfirmed"];
+
+        var newDeath = document.createElement("p");
+        newDeath.textContent = "NewDeaths:" + " " + data["NewDeaths"];
+
+        var totalDeaths = document.createElement("p");
+        totalDeaths.textContent = " TotalDeaths:" + " " + data["TotalDeaths"];
+
+        var newRecovered = document.createElement("p");
+        newRecovered.textContent ="NewRecovered:" + " " + data["NewRecovered"];
+
+        var totalRecovered = document.createElement("p");
+        totalRecovered.textContent ="TotalRecovered:" + " " + data["TotalRecovered"];
+        
+        dashBoard1.append(newConfirm, totalConfirm);
+        dashBoard2.append(newDeath, totalDeaths);
+        dashBoard3.append(newRecovered, totalRecovered);
+      }
+
+
+    // search countries
+      var search = document.getElementById("search")
+      search.addEventListener("click",function(){
+          var input = document.querySelector("input").value
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET","https://api.covid19api.com/summary")
+          xhr.send()
+          xhr.onload = function(){
+              if(xhr.status==200){
+                 var countriesData = JSON.parse(this.response).Countries
+                //  console.log(countriesData[0].Slug)
+                console.log(countriesData.length)
+                console.log(input)
+                 for(var i=0;i<countriesData.length;i++){
+                    if(countriesData[i].Slug == input || countriesData[i].Country == input ||countriesData[i].CountryCode==input){
+                        global_record(countriesData[i])
+                    }
+                 }
+                
+              }
+              else{
+                  console.log("ERROR CODE IS"+" "+xhr.status)
+              }
+          }
+      })
+     
+    </script>
+  </body>
+</html>
