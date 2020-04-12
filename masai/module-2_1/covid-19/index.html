@@ -16,9 +16,9 @@
       body {
         background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
       }
-      #topHeader{
+      /* #topHeader{
         background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-      }
+      } */
       .card-img {
         height: 150px;
         width: 250px;
@@ -42,23 +42,17 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row p-4">
-        <div class="col-3">
-          <img src="/home/ashok/coding/week_06/Day-6/masai/module-2_1/covid-19/Resources/coronavirus.jpg" class="rounded float-left card-img" alt="...">
-          <h4 class="border"></h4>
-        </div>
-        <div class="col-9 bg-danger" id="topHeader">
-          <h1 class="display6 text-danger font-weight-bold ">COVID-19</h1>
-         <br>
-          <p class="display6 text-white">#IndiaFightsCorona COVID-19</p>
-            
-          <h4 class="text-white">There is a lot of false information around. These are the facts.</h4>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12" id="topHeader">
+          <img src="/home/ashok/coding/week_06/Day-6/masai/module-2_1/covid-19/Resources/covid19.jpg" class="img-fluid"  style="width: 1200px; height: 400px;" alt="...">
+
+          <!-- <h1 class="display6 text-danger font-weight-bold ">COVID-19</h1> -->
         </div>
       </div>
-      <div class="row p-2">
+      <div class="row p-1 m-2">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
-            <!-- <nav class="navbar navbar-light" "> -->
+            <!-- <nav class="navbar navbar-light"> -->
             <a class="navbar-brand" href="#">HOME</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -83,10 +77,13 @@
             </div>
           </nav>
       </div>
-    </div>
-    
-    <!-- Dashboard -->
-    <div class="container">
+      <br>
+      <br>
+      <div class="row p-1 text-center ">
+        <div class="col-4 text-primary" ><h1>CONFIRM</h1></div>
+        <div class="col-4 text-danger"><h1>DEATHS</h1></div>
+        <div class="col-4 text-success"><h1>RECOVERED</h1></div>
+      </div>
       <div class="row text-white">
         <div class="col-4">
           <div class="card p-4" id="dashBoard1"></div>
@@ -98,65 +95,53 @@
           <div class="card p-4" id="dashBoard3"></div>
         </div>
       </div>
-    </div>
-    <br>
 
-    <!-- Covid Images -->
-    <div class="container">
-        <div class="row p-5 symptoms">
-            <div class="card col-6 symptoms" style="width: 18rem;">
-                <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/symptoms.png" class="card-img-top" alt="...">    
-            </div>
-
-            <div class="card col-6 symptoms" style="width: 18rem;">
-                <h3>How it spreads</h3>
-                <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/block-one.png" class="card-img-top" alt="..."><br>
-                <h3>PREVENTION</h3>
-                <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/block-two.png" class="card-img-top" alt="...">
-
-            </div>
+      
+      <div class="row m-2 p-5 symptoms">
+        <div class="card col-6 symptoms" style="width: 18rem;">
+          <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/symptoms.png" class="card-img-top img-fluid" alt="...">    
         </div>
-
-        <div class="row p-4">
-            <div class="col-12">
-                <!-- <div class="col-">
-                    <h6>Activities
-                        Be an active partner in nation-building. Participate in Groups, Tasks, Discussions, Polls, Blogs and Talks. Contribute Now!</h6>
-                </div> -->
-
-                <div class="card-group">
-                    <div class="card">
-                        
-                      <!-- <img src="" class="card-img-top" alt="..."> -->
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <!-- <img src="..." class="card-img-top" alt="..."> -->
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <!-- <img src="..." class="card-img-top" alt="..."> -->
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
+        
+        <div class="card col-6 symptoms" style="width: 18rem;">
+          <h3>How it spreads</h3>
+          <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/block-one.png" class="card-img-top img-fluid" alt="..."><br>
+          <h3>PREVENTION</h3>
+          <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/block-two.png" class="card-img-top img-fluid" alt="...">
+        </div> 
+      </div>
+      
+      <div class="row p-1">
+        <div class="col-12">
+            <div class="card-group">
+                <div class="card bg-primary text-white">
+                    
+                  <!-- <img src="/home/ashok/coding/week_06/Day-6/masai/module-2_1/covid-19/Resources/nurse.jpg" class="card-img-top img-fluid" alt="..."> -->
+                  <div class="card-body">
+                    <h5 class="card-title">Children's story book released to help children and young people cope with COVID-19</h5>
+                    <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
-            </div>
+                </div>
+                <div class="card bg-primary text-white">
+                  <!-- <img src="..." class="card-img-top" alt="..."> -->
+                  <div class="card-body">
+                    <h5 class="card-title">WHO and partners call for urgent investment in nures</h5>
+                    <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+                    <p class="card-text"><small class="text-muted">7 April 2020|News release</small></p>
+                  </div>
+                </div>
+                <div class="card bg-primary text-white">
+                  <!-- <img src="..." class="card-img-top" alt="..."> -->
+                  <div class="card-body">
+                    <h5 class="card-title">WHO and Global Citizin announce:'ONE WORLD: Together at home' Global Special to support </h5>
+                    <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p> -->
+                    <p class="card-text"><small class="text-muted">6 April 2020| News release</small></p>
+                  </div>
+                </div>
+              </div>
         </div>
-
+      </div>
     </div>
-
-
 
     <script>
     
@@ -190,20 +175,19 @@
         dashBoard2.textContent = ""
         dashBoard3.textContent = ""
         var newConfirm = document.createElement("p");
-        newConfirm.textContent = "NewConfirmed:" + " " + data["NewConfirmed"];
+        newConfirm.textContent = "TodayConfirmed:" + " " + data["NewConfirmed"];
 
         var totalConfirm = document.createElement("p");
-        totalConfirm.textContent =
-          "TotalConfirmed:" + " " + data["TotalConfirmed"];
+        totalConfirm.textContent ="TotalConfirmed:" + " " + data["TotalConfirmed"];
 
         var newDeath = document.createElement("p");
-        newDeath.textContent = "NewDeaths:" + " " + data["NewDeaths"];
+        newDeath.textContent = "TodayDeaths:" + " " + data["NewDeaths"];
 
         var totalDeaths = document.createElement("p");
         totalDeaths.textContent = " TotalDeaths:" + " " + data["TotalDeaths"];
 
         var newRecovered = document.createElement("p");
-        newRecovered.textContent ="NewRecovered:" + " " + data["NewRecovered"];
+        newRecovered.textContent ="TodayRecovered:" + " " + data["NewRecovered"];
 
         var totalRecovered = document.createElement("p");
         totalRecovered.textContent ="TotalRecovered:" + " " + data["TotalRecovered"];
